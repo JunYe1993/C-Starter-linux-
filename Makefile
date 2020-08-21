@@ -5,12 +5,12 @@ CFLAGS  = -g -Wall
 # path
 SOURCE  = source/
 INCLUDE = include/
-OBJECTS = myPthread.o
+OBJECTS = myRegex.o
 
 all: program
 
 program: main.o ${OBJECTS}
-	${CC} ${CFLAGS} -o program main.o ${OBJECTS} -lpthread 
+	${CC} ${CFLAGS} -o program main.o ${OBJECTS} -lpthread
 
 main.o: main.c
 	${CC} -I${INCLUDE} ${CFLAGS} -c $< 

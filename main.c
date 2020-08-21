@@ -2,16 +2,12 @@
 #include <string.h>
 #include <stdlib.h>
 #include "myPthread.h"
+#include "myRegex.h"
 
 typedef void (* CALLBACK) (int);
 
 int main()
 {
-    char * ptr;
-    //char ptr[4];
-    char * data = "123456789";
-    //ptr = calloc(sizeof(data), sizeof(char));
-    memcpy(ptr, data, 10);
-    printf("%s\n", ptr);
+    test();
     return 0;
 }
